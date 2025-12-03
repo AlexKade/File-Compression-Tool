@@ -68,7 +68,7 @@ public class FileCompressor {
     }
 
     public static String compress(String input) {
-        if (input.isEmpty()) return "";
+        if (input.isEmpty()||input==null){ return "";}
     
         StringBuilder compressed = new StringBuilder();
         char currentChar = input.charAt(0);
@@ -130,4 +130,5 @@ public class FileCompressor {
     
         return decompressed.toString();
     }
+
 }
